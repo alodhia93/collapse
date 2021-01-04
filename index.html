@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="accordion">
+        <button type="button" class="accordion__button">Expand</button>
+        <div class="accordion__content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Donec accumsan felis ac felis pharetra imperdiet. 
+                Phasellus turpis eros, porta congue nulla ut, lobortis posuere massa. Quisque in enim vitae elit scelerisque vulputate. 
+                Cras odio libero, sagittis quis pretium at, varius at neque. Integer nisl magna, dictum mattis commodo eget, imperdiet non arcu. 
+                Sed eget sodales tellus, ac viverra nulla. Nam mattis id turpis vel facilisis. In tempus tellus nunc, ut mattis nisi euismod at.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.accordion__button').forEach(button=>{
+            button.addEventListener('click', ()=>{
+                button.classList.toggle('accordion__button--active');
+            });
+        });
+    </script>
+</body>
+</html>
